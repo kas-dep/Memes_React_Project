@@ -11,7 +11,7 @@ This is my diploma project which I created for my postgraduate studies "Frontend
 2. npm install
 3. npm start - run the project
 
-After finishing this orders you can display app on your device
+After finishing this steps you can display app on your device
 
 Used technologies:
  1. Modern React with hooks - as a main library
@@ -23,10 +23,10 @@ Used technologies:
 Implemented solutions:
 
  1. Routes /hot, /regular /favourites and /addMeme
- 2. Live filtering for mems (upvote - downvote > 5 ):
- HOT (upvote - downvote > 5)
- REGULAR (upvote - downvote <= 5)
- FAVOURITE - fav icon signed
+ 2. Live filtering for mems:
+ - HOT (upvote - downvote > 5)
+ - REGULAR (upvote - downvote <= 5)
+ - FAVOURITE - fav icon signed
  3. Responsive navigation - tabs and burger menu
  4. Passing data through context
  5. List of memes is scrollable
