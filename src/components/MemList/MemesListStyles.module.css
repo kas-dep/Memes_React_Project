@@ -1,0 +1,10 @@
+.list {
+  margin-top: 4rem;
+  min-height: calc(100vh - 4rem);
+  width: 100%;
+  background: #dfd8ff;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}

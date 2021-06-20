@@ -1,0 +1,127 @@
+.burgerMenu {
+  width: 40px;
+  height: 20px;
+  border: none;
+  margin: auto;
+  margin-right: 20px;
+  position: relative;
+  background: transparent;
+}
+.line {
+  position: absolute;
+  background: rgb(54, 54, 54);
+  width: 40px;
+  height: 4px;
+  left: 0;
+  border-radius: 2px;
+  z-index: 200;
+}
+.line1 {
+  top: 0;
+}
+.line2 {
+  top: 50%;
+}
+.line3 {
+  top: 100%;
+}
+.toXLine1 {
+  animation: toXLine1 0.5s ease forwards;
+}
+.toBurgerLine1 {
+  animation: toBurgerLine1 0.5s ease forwards;
+}
+.toXLine2 {
+  animation: toXLine2 0.5s ease forwards;
+}
+.toBurgerLine2 {
+  animation: toBurgerLine2 0.5s ease forwards;
+}
+.toXLine3 {
+  animation: toXLine3 0.5s ease forwards;
+}
+.toBurgerLine3 {
+  animation: toBurgerLine3 0.5s ease forwards;
+}
+@keyframes toXLine1 {
+  0% {
+    top: 0;
+  }
+  30% {
+    top: 50%;
+  }
+  60% {
+    top: 50%;
+  }
+  100% {
+    top: 50%;
+    transform: rotate(-45deg);
+  }
+}
+@keyframes toBurgerLine1 {
+  0% {
+    top: 50%;
+    transform: rotate(-45deg);
+  }
+  30% {
+    transform: rotate(0);
+  }
+  60% {
+    top: 50%;
+  }
+  100% {
+    top: 0;
+  }
+}
+@keyframes toXLine2 {
+  0% {
+    background: rgb(54, 54, 54);
+  }
+  100% {
+    background: transparent;
+  }
+}
+@keyframes toBurgerLine2 {
+  0% {
+    background: transparent;
+  }
+  100% {
+    background: rgb(54, 54, 54);
+  }
+}
+@keyframes toXLine3 {
+  0% {
+    top: 100%;
+  }
+  30% {
+    top: 50%;
+  }
+  60% {
+    top: 50%;
+  }
+  100% {
+    transform: rotate(45deg);
+    top: 50%;
+  }
+}
+@keyframes toBurgerLine3 {
+  0% {
+    transform: rotate(45deg);
+    top: 50%;
+  }
+  30% {
+    transform: rotate(0);
+  }
+  60% {
+    top: 50%;
+  }
+  100% {
+    top: 100%;
+  }
+}
+
+@media (min-width: 768px) {
+  .burgerMenu {
+    display: none;
+  }
+}

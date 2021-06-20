@@ -1,0 +1,139 @@
+.header {
+  height: 4rem;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  box-shadow: rgba(0, 0, 0, 0.05) 0px 1px 2px 0px;
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: 10;
+  width: 100vw;
+  background: rgba(255, 255, 255);
+}
+.icon {
+  margin-right: 4px;
+  font-size: 30px;
+}
+.title {
+  justify-self: flex-start;
+  margin-left: 5%;
+  display: flex;
+  align-items: center;
+}
+.navbar {
+  height: 100vh;
+  width: 100%;
+  top: 4rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  position: fixed;
+  background-color: #dfd8ff;
+  z-index: 10;
+  font-size: 24px;
+  transform: translateX(100vw);
+}
+.link {
+  width: 40vw;
+  display: flex;
+  justify-content: center;
+  border-bottom: 1px solid rgb(185, 185, 185);
+}
+.toFormBtn:focus {
+  background-color: rgba(255, 99, 71, 0.95);
+}
+.link,
+.toFormBtn {
+  text-decoration: none;
+  text-transform: uppercase;
+  padding: 24px;
+  color: #2f2f2f;
+  cursor: pointer;
+}
+.plusIcon {
+  font-size: 16px;
+  padding-right: 8px;
+  margin: auto;
+}
+.toFormBtn {
+  padding: 8px 16px;
+  margin: 24px;
+  background-color: rgb(255, 99, 71);
+  color: #fff;
+  box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
+  border-radius: 5px;
+}
+.hideNav {
+  animation: hideNav 0.5s ease forwards;
+}
+.showNav {
+  animation: showNav 0.5s ease forwards;
+}
+
+@keyframes hideNav {
+  0% {
+    transform: translateX(0);
+  }
+  100% {
+    transform: translateX(100vw);
+  }
+}
+@keyframes showNav {
+  0% {
+    transform: translateX(100vh);
+  }
+  100% {
+    transform: translateX(0);
+  }
+}
+
+@media (min-width: 768px) {
+  .navbar {
+    margin-right: 5%;
+    background-color: #fff;
+    height: 4rem;
+    flex-direction: row;
+    position: relative;
+    top: 0;
+    font-size: 16px;
+    width: auto;
+    transform: none;
+  }
+  .link {
+    width: auto;
+    display: block;
+    border: none;
+  }
+  .link,
+  .toFormBtn {
+    margin: 0 8px;
+    padding: 8px;
+  }
+  .toFormBtn {
+    padding: 8px 16px;
+    background-color: rgb(255, 99, 71);
+    color: #fff;
+    box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
+    border-radius: 5px;
+  }
+  .toFormBtn:hover {
+    background-color: rgba(255, 99, 71, 0.95);
+  }
+  .link:hover {
+    color: tomato;
+  }
+  .active {
+    border-bottom: 2px solid tomato;
+  }
+  .activeBtn {
+    background-color: rgb(255, 99, 71);
+  }
+  .hideNav {
+    animation: none;
+  }
+  .showNav {
+    animation: none;
+  }
+}

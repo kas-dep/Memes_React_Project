@@ -1,0 +1,14 @@
+.container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  width: 100%;
+  min-height: calc(100vh - 4rem);
+  margin-top: 4rem;
+  background: #dfd8ff;
+  color: #2f2f2f;
+}
+.text {
+  font-size: 24px;
+}
